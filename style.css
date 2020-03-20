@@ -1,0 +1,297 @@
+
+
+body {
+    background-color:white;
+    overflow-y:scroll; /*ne trogat*/
+    overflow-x:hidden;
+    margin: 0 0 0 0;
+}
+
+/*
+img {
+    border: none;
+}
+*/    
+    
+/*----------------------------------*/
+.myGlobalWrapper {
+    display:block;
+    /*rabotaet ne na vseh stranicah, dla transorm scale ispolzovat' divi s "CONTENT" v nachale nazvaniya + padding-top dla corekcii*/
+    height: auto !important;
+}
+
+
+.myHeader {
+    width:900px;
+    margin: auto;
+    background-color:white;
+    display: inline-block;
+    display: block;
+}
+
+.myLogoType {
+    width:auto;
+    text-align:left;
+    margin:auto;
+    z-index:9;
+    padding-top:10px;
+    padding-bottom: 10px;
+    display: inline-block;
+    width: 72%;
+}
+
+
+.mySocial {
+	width: auto;
+	text-align: right;
+	margin: auto;
+	display: inline-block;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;
+	right: 0px;
+	width: auto; /* can be 9% */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+/* 	border: red 1px solid; */
+}
+
+.myPartner {
+	width: auto;
+	text-align: right;
+	margin: auto;
+	display: inline-block;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	vertical-align: middle;
+	right: 0px;
+	width: auto; /* can be 9% */
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+/* 	border: red 1px solid; */
+}
+
+.mySocial .fa {
+	display:inline-block;
+	font-size: 2em;
+	vertical-align: middle;
+	padding:5px;
+	color: black;
+}
+
+   
+a.myWhiteLink { color:#FFF; }
+a.myWhiteLink:visited  { color:#FFF; }
+a.myWhiteLink:link { color:#FFF; }
+a.myWhiteLink:hover { color:#999; }
+a.myWhiteLink:active { color:#FFF; }
+ 
+/* -------------------------- */
+
+.myMenu {
+    width:900px;
+    margin: auto;
+    height:40px;
+    text-align:center;
+    background-color:#89c9be;
+    border-bottom:#999 1px solid;
+    z-index:10;
+    -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+    -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+    box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+}
+    
+.myMenuLink {
+    display:inline-block;
+    font-family: verdana;
+    font-weight:300;
+    font-size:12pt;
+    text-transform: uppercase;
+    padding:9px 12px 0 12px;
+}
+
+a.myMenuLink  { color:#000; }
+a.myMenuLink:visited  { color:#000; }
+a.myMenuLink:link { color:#000; }
+a.myMenuLink:hover { color:#00A4A4; }
+a.myMenuLink:active { color:#000; }
+
+.myMenuDropDown {
+    margin:0;
+    padding:0;
+    list-style-type: none;
+}
+
+.myMenuDropDownContent {
+    display: none;
+    position: absolute;
+    min-width: 203px;
+    z-index: 1;
+    background-color: #89c9be;
+    margin-left: -14px;
+}
+
+.myMenuDropDown:hover .myMenuDropDownContent {
+    display: block;
+}
+
+.myMenuDropDownContent div {
+    border-bottom: #ccc 1px solid;
+    width:100%;
+    height:30px;
+}
+
+.myMenuDropDownContent a {
+    font-weight:300;
+    font-size:9pt;
+    text-align:left;
+    display:block;
+    padding-left:30px;
+    padding-right: 30px;
+}
+
+.myMenuSpecially {
+    display: block;
+    font-size: 11pt;
+    font-family: verdana;
+    text-transform: uppercase;
+    padding-left:30px;
+    text-align:left;
+    padding-right: 30px;
+}
+
+/* -------------------------- */
+
+.myPageContent {
+  padding:0px 0 20px 0px;
+  width:900px;
+  margin:auto;
+  text-align:center;
+}
+
+.myArticle {
+  margin-bottom:0;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+  
+  background-color:#f2f2f2;
+  padding:0 0 0 0; 
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+  -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+  box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+}
+
+.myNewsArticle {
+  margin-bottom:0;
+  margin-top:15px;
+  margin-left:auto;
+  margin-right:auto;
+  
+  background-color:#f2f2f2;
+  padding:0 0 0 0; 
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+  -moz-box-shadow:    0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+  box-shadow:         0px 1px 2px 0px rgba(50, 50, 50, 0.32);
+}
+
+.myArticleHeader {
+    text-align:left;
+
+}
+
+.myArticleHeader p {
+  display:inline-block;
+  background-color:#89c9be;
+  margin:0 0 0 0;
+  padding:5px 5px 5px 13px;
+  font-family: verdana;
+  font-weight:400;
+  font-size:10pt;
+}
+
+.myNewsHeaderText {
+  display:inline-block;
+  background-color:#666;
+  color:#FFF;
+  margin:0 0 0 0;
+  padding:5px 5px 5px 13px;
+  font-family: verdana;
+  font-weight:400;
+  font-size:10pt;
+}
+
+.myArticleBody {
+    padding:20px 20px 20px 20px;
+}
+
+.myNewsArticle .myArticleBody {
+    padding-top:0px;
+}
+
+
+.myArticleText {
+    display:inline-block;
+    font-family: verdana;
+    font-weight:300;
+    font-size:10pt;
+    text-align:justify;
+    vertical-align:top;
+}
+
+.myArticleTextHeader {
+    font-weight:600;
+    font-size:12.3pt;
+}
+
+.myArticleTextMiddle {
+    font-size:13pt;
+}
+
+.myArticleText p {
+    margin:10px 0 0 0;
+}
+
+.myArticleSpace {
+    display:inline-block;
+}
+
+.myArticleImage {
+    display:inline-block;
+    width:49%;
+}
+
+
+.myArticleImage img {
+    width:100%;
+}
+
+.myLink {
+  color:black;
+  font-weight: 600;
+}
+
+
+/* -------------------------- */
+
+
+.myFooter {
+    display:block;
+    width:900px;
+    margin: auto;
+    background-color:#89c9be;
+    clear: left;
+}
+.myFooterContent {
+    display:inline-block;
+    position:relative;
+    width:100%;
+    text-align:center;
+    font-family: verdana;
+    font-size:9pt;
+    padding:9px 0 9px 0;
+}
+		
+
