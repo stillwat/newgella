@@ -30,16 +30,13 @@ img {
 }
 
 .myLogoType {
-    width:auto;
     text-align:left;
     margin:auto;
     z-index:9;
     padding-top:10px;
-    padding-bottom: 10px;
     display: inline-block;
     width: 72%;
 }
-
 
 .mySocial {
 	width: auto;
@@ -47,40 +44,18 @@ img {
 	margin: auto;
 	display: inline-block;
 	padding-top: 10px;
-	padding-bottom: 10px;
-	vertical-align: middle;
 	right: 0px;
 	width: auto; /* can be 9% */
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-/* 	border: red 1px solid; */
-}
 
-.myPartner {
-	width: auto;
-	text-align: right;
-	margin: auto;
-	display: inline-block;
-	padding-top: 1px;
-	padding-bottom: 1px;
-	vertical-align: middle;
-	right: 0px;
-	width: auto; /* can be 9% */
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
 /* 	border: red 1px solid; */
 }
 
 .mySocial .fa {
 	display:inline-block;
 	font-size: 2em;
-	vertical-align: middle;
 	padding:5px;
 	color: black;
 }
-
    
 a.myWhiteLink { color:#FFF; }
 a.myWhiteLink:visited  { color:#FFF; }
@@ -173,7 +148,7 @@ a.myMenuLink:active { color:#000; }
 
 .myArticle {
   margin-bottom:0;
-  margin-top:15px;
+
   margin-left:auto;
   margin-right:auto;
   
@@ -266,6 +241,8 @@ a.myMenuLink:active { color:#000; }
 
 .myArticleImage img {
     width:100%;
+	-webkit-box-shadow: 0px 2px 4px 0px #f2f2f2; 
+	box-shadow: 0px 2px 4px 0px #f2f2f2;
 }
 
 .myLink {
